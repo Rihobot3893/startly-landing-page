@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    background-color: #c7aee8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+}
+
+.logo img{
+    width:20px;
+    height:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+header ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+header ul img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+header ul li button{
+    padding: 8px 14px;
+    background-color: #5d11ea;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.LContainer{
+ position: relative;
+ width: 45%;
+
+}
+
+@media (max-width:768px){
+
+    .main1{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .LContainer,
+    .RContainer{
+        width:100%;
+    }
+}
+
+.msg1{
+    font-weight: bold ;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height:1.1;
+    margin-bottom: 10px;
+}
+.btn-group{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.strtBtn{
+    padding:10px 20px;
+    background:#5d11ea;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;  
+}
+.watchBtn{
+    padding:10px 20px;
+    background:white;
+    color:#5d11ea;
+    border:1px solid #5d11ea;
+    border-radius:5px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+.plybtn{
+    width: 12px;
+    height: 12px;
+}
+.descript{
+    font-size:clamp(0.9rem, 2vw, 1.1rem);
+    color:#8e81a5;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.RContainer {
+    border-radius: 12px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 50%;
+  height: 100%;
+  margin-right: 3%;
+  margin-top: 5%;
+}
+
+.RContainer video{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    border-radius:12px;
+}
+
+
+.btmMain{
+    background-color: #f3f0f7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.btmMsg{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.cardsPg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.card{
+    display: flex;
+    flex: 1 1 300px;
+    min-height: 150px;
+    background: #ffffff;
+    border:1px solid #ffffff;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+@media (max-width:768px){
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .cardsPg .card img{
+        margin:20px 0 0 0;
+    }
+}
+
+.cardContenttxt{
+    margin: 20px;
+}
+.cardsPg .card img{
+    width: 50px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cardsPg .card .cardContenttxt h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+@media (max-width:768px){
+
+    footer ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
+
+footer ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+footer ul .rightReserve{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 5px;   
+}
+
+footer ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    header ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .main1{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .LContainer,
+    .RContainer{
+        width:100%;
+    }
+
+    .btmMsg{
+        text-align:center;
+    }
+
+    .card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .cardContenttxt{
+        margin:20px;
+    }
+
+    footer ul{
+        flex-direction:column;
+        gap:15px;
+    }
+}
