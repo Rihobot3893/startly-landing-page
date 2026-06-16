@@ -8,6 +8,8 @@ section{
     position: relative;
     margin-top: 0;
     width: 100%;
+    height: auto;
+    min-height: 100px;
     padding: 60px 20px;
     display: flex;
     flex-wrap: wrap;
